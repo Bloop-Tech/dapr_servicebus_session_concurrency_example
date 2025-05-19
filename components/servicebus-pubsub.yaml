@@ -1,0 +1,14 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: servicebus-pubsub
+spec:
+  type: pubsub.azure.servicebus
+  version: v1
+  metadata:
+    - name: connectionString
+      value: "Endpoint=sb://your_servicebus_namespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=your_access_key"
+    - name: consumerID
+      value: "session-test-subscriber"
+    - name: disableEntityManagement
+      value: "true"

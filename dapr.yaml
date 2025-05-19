@@ -1,0 +1,9 @@
+version: 1
+common:
+  resourcesPath: ./components/
+apps:
+  - appID: session-test
+    appDirPath: .
+    command: ["dotnet", "run"]
+    appPort: 5250
+    daprHTTPPort: 3500
