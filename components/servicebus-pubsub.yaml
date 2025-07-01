@@ -12,3 +12,7 @@ spec:
       value: "session-test-subscriber"
     - name: disableEntityManagement
       value: "true"
+    - name: maxConcurrentSessions
+      value: "10"
+    - name: maxConcurrentHandlers
+      value: "1"

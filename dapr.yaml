@@ -7,3 +7,4 @@ apps:
     command: ["dotnet", "run"]
     appPort: 5250
     daprHTTPPort: 3500
+    daprGRPCPort: 50003
